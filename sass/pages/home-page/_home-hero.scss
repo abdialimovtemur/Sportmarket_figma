@@ -1,0 +1,210 @@
+.home-hero{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 30px 0px;
+
+    &__left{
+        display: grid;
+        background: #FFF;
+        grid-template-columns: auto auto;
+        border-radius: 10px;
+        &__title{
+            padding: 100px 40px;
+            display: grid;
+            width: 120%;
+            font-size: 22px;
+            gap: 20px;
+
+            & h1{
+                color: black;
+            }
+
+            &__button{
+                height: 50px;
+                border: 2px solid #FBD029;
+                border-radius: 10px;
+                background-color: inherit;
+                color: black;
+                width: 150px;
+
+            }
+
+            
+        }
+
+        &__img{
+            width: 450px;
+            flex-shrink: 0;
+            & img{
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    &__right{
+        display: grid;
+        grid-template-columns: auto;
+        padding: 0px 0px 0px 22px;
+        width: 100;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        
+        &__top{
+            display: flex;
+            gap: 12px;
+            background-color: #FFF;
+            border-radius: 10px;
+            padding: 0px 0px 0px 22px;
+            &__title{
+                p{
+                    color: black;
+                }
+                h2{
+                    color: red;
+                }
+                h3{
+                    color: black;
+                    padding: 15px 0px;
+                }
+                sub{
+                    color: red;
+                }
+            }
+            
+
+            &__img{
+                width: 170px;
+                display: flex;
+
+                & img{
+                    width: 100%;
+                    border-radius: 10px;
+                }
+                
+            }
+        }
+
+        &__bottom{
+            display: flex;
+            background-color: #FFF;
+            border-radius: 10px;
+            justify-content: center;
+            padding: 0px 0px 0px 22px;
+            
+            &__title{
+                p{
+                    color: black;
+                }
+                h2{
+                    color: black;
+                }
+                h3{
+                    color: black;
+                    padding: 15px 0px;
+                }
+                sub{
+                    color: black;
+                }
+                
+            }
+
+            &__img{
+                width: 160px;
+                display: flex;
+                height: 100%;
+
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1080px){
+    .home-hero{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 800px){
+    .home-hero{
+       
+        &__left{
+            width: 90%;
+            height: 100%;
+            margin: 0 auto;
+            justify-content: center;
+            &__img{
+                width: 200px;
+                flex-shrink: 0;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                }
+            }
+
+            &__title{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 500px){
+    .home-hero{
+        &__right{
+            display: flex;
+            align-items: center;
+            &__top{
+                width: 75%;
+                height: 100%;
+                font-size: 11px;
+            }
+
+            &__bottom{
+                width: 75%;
+                height: 100%;
+                font-size: 13px;
+            }
+
+
+           
+        }
+        &__left{
+            width: 68%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+            &__img{
+                width: 100px;
+                flex-shrink: 0;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                }
+            }
+
+            &__title{
+                font-size: 7px;
+                padding: 22px;
+                &__button{
+                    height: 30px;
+                    width: 70px;
+                    font-size: 8px;
+    
+                }
+            }
+        }
+    }
+}

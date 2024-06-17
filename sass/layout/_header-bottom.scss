@@ -1,0 +1,255 @@
+.header-bottom{
+    background-color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    padding: 15px 0px;
+    z-index: 999;
+
+    &__nav{
+        &__btn-hamburger{
+            width: 20px;
+            border: none;
+            color: black;
+            background-color: black;
+            padding: 13px 25px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 23px;
+            display: none;
+        }
+
+        &__left{
+            
+            &__category{
+
+               button{
+                background-color: black;
+                border: none;
+                display: inline-flex;
+                padding: 15px 40px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border-radius: 5px;
+                }
+            }
+
+            &__input{
+                display: inline-flex;
+                // padding: 17px 20px;
+                width: 593px;
+                height: 45px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                background: #F2F2F2;
+                padding: 0px 30px;                
+                input{
+                    border: none;
+                    color: black;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    height: 100%;
+                    background: inherit;
+                    width: 100%;
+                    outline: none;
+                }
+            }
+        }
+
+        &__right{
+            &__user{
+                width: 45px;
+                height: 45px;
+                flex-shrink: 0;
+                border-radius: 3px;
+                background:#F2F2F2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 900;
+                font-size: large;
+                border: none;
+            }
+
+            &__like{
+                width: 45px;
+                height: 45px;
+                flex-shrink: 0;
+                border-radius: 3px;
+                background:#F2F2F2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 900;
+                font-size: large;
+                border: none;
+            }
+
+            &__basket{
+                display: inline-flex;
+                padding: 15px 30px 14px 30px;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                border-radius: 5px;
+                background:#F2F2F2;
+                color: black;
+                border: none;
+
+                .korz{
+                    color: black;
+                }
+            }
+        }
+
+        &__shrink{
+            box-shadow: 0px 0px 30px rgb(0, 81, 255);
+        }
+
+        
+    &__logo{
+        display: flex;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    &__list{ 
+        padding: 120px 0px;
+        position: fixed;
+        top: 0;
+        left:  -100%;
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.4s;
+        text-align: center;
+        background: white;
+
+        & a{
+            background: white;
+            color: blue;
+            font-size: 18px;
+            padding: 5px;
+            border-radius: 3px;
+            border: 2px solid;
+        }
+    }
+
+    &__list-show{
+        left: 0;
+    }
+    }
+}
+
+@media (max-width:1200px){
+    .header-bottom{
+        &__nav{
+            // &__btn-hamburger{
+              
+            // }
+    
+            &__left{
+                
+                &__category{
+    
+                   button{
+                    background-color: black;
+                    border: none;
+                    display: inline-flex;
+                    padding: 15px 40px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    border-radius: 5px;
+                    }
+                }
+    
+                &__input{
+                    width: 250px;
+                    height: 45px;              
+                }
+            }
+    
+            &__right{
+    
+                &__basket{
+                    display: inline-flex;
+                    padding: 15px 30px 14px 30px;
+                    gap: 5px;
+                }
+            }
+    }   }
+}
+
+@media (max-width:800px){
+    .header-bottom{
+        &__nav{
+            // &__btn-hamburger{
+              
+            // }
+    
+            &__left{
+                
+                &__category{
+    
+                   button{
+                    padding: 15px 15px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    border-radius: 5px;
+                    & a{
+                        display: none;
+                    }
+                    }
+                }
+    
+                &__input{
+                    width: 130px;
+                    height: 45px;              
+                }
+            }
+    
+            &__right{
+    
+                &__basket{
+                    display: inline-flex;
+                    padding: 15px 10px 14px 10px;
+                    gap: 5px;
+                }
+            }
+    }   }
+}
+
+
+@media (max-width:500px){
+    .header-bottom{
+        &__nav{
+
+            &__left{
+                &__input{
+                    width: 30%;  
+                    padding: 24px;       
+                }
+            }
+            &__right{
+                &__basket{
+                    padding: 16px 15px;
+
+                    .korz{
+                        display: none;
+                    }
+                   
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,133 @@
+.gantel{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    padding:50px 0px;
+    gap: 34px;
+    &__left{
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        
+        &__top{
+            background-color: #FFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 130px 0px;
+            border-radius: 5px;
+            
+        }
+
+        &__bottom{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 10px;
+            &__card{
+                background-color: #FFF;
+                gap: 4px;
+                align-items: center;
+                display: grid;
+                justify-content: center;
+                padding: 13px 0px;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    &__right{
+        padding: 60px;
+        display: grid;
+        background-color: #FFF;
+        border-radius: 5px;
+
+        &__share{
+            padding: 20px 0px;
+            display: flex;
+            align-items: center;
+        }
+
+        h1{
+            color: black;
+            font-size: 29px;
+            font-weight: 900;
+            width: 260px;
+        }
+
+        p{
+            color: black;
+            font-size: 20px;
+            font-weight: 600;
+            padding: 10px 0px;
+            width: 390px;
+        }
+
+        h2{
+            color: black;
+            padding: 20px 0px;
+        }
+
+        sub{
+            color: #1F1D14;
+        }
+
+        b{
+            color: black;
+        }
+
+        &__buttons{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+
+            &__left{
+                width: 170px;
+                display: flex;
+                border: none;
+                background-color:#FBD029;
+                align-items: center;
+                border-radius: 5px;
+                gap: 10px;
+                padding: 0px 27px;
+            }
+
+            &__right{
+                width: 170px;
+                display: flex;
+                align-items: center;
+                padding: 0px 27px;
+                gap: 10px;
+                border: none;
+                border: 2px solid #FBD029;
+                background-color: #FFF;
+                border-radius: 5px;
+
+            }
+        }
+    }
+}
+
+@media  (max-width:500px){
+    .gantel__left__top{
+        width: 90%;
+        img{
+            width: 40%;
+        }
+    }
+
+    .gantel__left__bottom{
+        width: 90%;
+    }
+
+    .gantel__right{
+        width: 90%;
+        p{
+            font-size: 12px;
+            width: 170px;
+        }
+
+        h1{
+            width: 180px;
+            font-size: 20px;
+        }
+    }
+}

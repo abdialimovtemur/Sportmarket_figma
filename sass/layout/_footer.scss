@@ -1,0 +1,145 @@
+footer{
+    background-color: #1F1D14;
+    padding: 50px 0px 0px 0px;
+    border-top: 29px solid #FBD029;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+
+    &__end{
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: auto auto;
+
+    }
+
+    &__top{
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 120px 120px;
+
+        &__logo{
+            display: flex;
+            gap: 6px;
+
+            &__title{
+                font-size: 22px;
+                width:80px;
+            }
+        }
+
+        &__list{
+            display: grid;
+            gap: 10px;
+
+            &__item a{
+                display: flex;
+                gap: 10px;
+                align-items: center;
+            }
+        }
+
+        &__contact{
+            display: grid;
+            gap: 25px;
+            
+
+        }
+
+        &__adress{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            width: 250px;
+
+            i{
+                font-size: 30px;
+            }
+        }
+
+        &__follow{
+            display: grid;
+            gap: 10px;
+
+            &__input{
+                width: 235px;
+                height: 40px;
+                flex-shrink: 0;
+                padding: 10px;
+                border-radius: 5px;
+                border: 3px solid  #9A9EA5;
+            }
+
+            &__button{
+                width: 235px;
+                height: 40px;
+                flex-shrink: 0;
+                padding: 10px;
+                border-radius: 5px;
+                background-color: #FBD029;
+                border: none;
+                color: black;
+                font-weight: 700;
+
+                & buttom::placeholder{
+                    color: black;
+                }
+            }
+
+            &__icons{
+                display: flex;
+                justify-content: space-between;
+                width: 140px;
+                font-size: 24px;
+                padding: 20px 0px;
+            }
+        }
+    }
+
+    &__end{
+        padding: 20px 0px;
+
+
+        &__right{
+            display: flex;
+            gap: 20px;
+        }
+    }
+    
+}
+
+@media (max-width: 1000px){
+    
+    .footer{
+    
+        &__top{
+            grid-template-columns: auto auto;
+            grid-template-rows: 140px 200px;
+        }
+    }   
+}
+
+@media (max-width: 540px){
+    .footer{
+    
+        &__top{
+            grid-template-columns: auto;
+            justify-content: start;
+            gap: 20px;
+
+
+        }
+
+        &__end{
+            justify-content: space-between;
+            grid-template-columns: auto;
+
+            &__right{
+                display: grid;
+            }
+        }
+    } 
+}

@@ -1,0 +1,30 @@
+.catalog{
+    background-color: white;
+    padding: 30px 0px;
+    .katalog{
+        color: black;
+        padding: 14px 0px;
+    }
+    &__cards{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        justify-content: space-between;
+        gap: 12px;    
+    }
+
+    &__card{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 187px;
+        height: 247px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        background-color: #c5d6e1ea;
+        &__title{
+            color: black;
+            font-size: 19px;
+            font-weight: 700;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.aboutus{
+    &__main{
+        color: black;
+        font-size: 28px;
+        padding: 30px 0px;
+    }
+
+    &__content{
+        background-color: black;
+        display: flex;
+        padding: 60px;
+        border-radius: 10px;
+        &__info{
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px; 
+            width: 60%;
+            
+            a{
+                text-decoration-line: underline;
+            }
+        }
+
+        &__arrow{
+            width: 40%;
+            display: flex;
+            justify-content: end;
+            align-items: end;
+        }
+    }
+}
+
+@media (max-width:600px){
+    .aboutus__content{
+        padding: 4px;
+
+        &__info{
+        font-size: 10px;
+        padding: 10px;
+        }
+    }
+}
