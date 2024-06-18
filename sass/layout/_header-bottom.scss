@@ -5,7 +5,7 @@
     left: 0;
     width: 100%; 
     padding: 15px 0px;
-    z-index: 999;
+    z-index: -1;
 
     &__nav{
         &__btn-hamburger{
@@ -40,7 +40,6 @@
 
             &__input{
                 display: inline-flex;
-                // padding: 17px 20px;
                 width: 593px;
                 height: 45px;
                 justify-content: center;

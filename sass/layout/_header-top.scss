@@ -28,6 +28,16 @@
         font-weight: 500;
     }
 
+    &__left{
+        display: flex;
+        color: aliceblue;
+        z-index: 999;
+    }
+
+    .header-top__nav__list.togle{
+        left: 0;
+    }
+
     &__list{ 
         padding: 120px 0px;
         position: fixed;
@@ -40,15 +50,16 @@
         justify-content: center;
         transition: 0.4s;
         text-align: center;
-        background: white;
+        backdrop-filter: blur(9px);
 
         & a{
             background: white;
-            color: blue;
+            color: rgb(174, 30, 42);
+            border-radius: 5px;
+            box-shadow: inset 0px 0px 7px rgb(41, 41, 21);
             font-size: 18px;
             padding: 5px;
-            border-radius: 3px;
-            border: 2px solid;
+            border: 3px solid;
         }
     }
 
@@ -79,10 +90,6 @@
                 &__title{
                     font-size: 22px;
                 }
-            }
-
-            &__left{
-
             }
 
             &__right{

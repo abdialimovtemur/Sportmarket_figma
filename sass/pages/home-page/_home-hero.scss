@@ -3,6 +3,7 @@
     grid-template-columns: auto auto;
     padding: 30px 0px;
 
+
     &__left{
         display: grid;
         background: #FFF;
@@ -57,6 +58,10 @@
             background-color: #FFF;
             border-radius: 10px;
             padding: 0px 0px 0px 22px;
+            position: relative;
+            overflow: hidden;
+
+          
             &__title{
                 p{
                     color: black;
@@ -92,7 +97,17 @@
             border-radius: 10px;
             justify-content: center;
             padding: 0px 0px 0px 22px;
-            
+            position: relative;
+            overflow: hidden;
+
+            // .aksiya{
+            //     position: absolute;  
+            //     background-color: red;
+            //     padding: 9px 70px;
+            //     bottom: 0px;
+            //     right: 0px;
+            //     transform: rotate(-40deg);
+            // }
             &__title{
                 p{
                     color: black;

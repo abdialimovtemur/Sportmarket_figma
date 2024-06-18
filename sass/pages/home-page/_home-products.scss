@@ -14,10 +14,12 @@
 
     &__card{
         width: 292px;
-        height: 416px;
+        height: 436px;
         flex-shrink: 0;
         border-radius: 5px;
         background: #FFF;
+        position: relative;
+        overflow: hidden;
 
         i{
             display: flex;
