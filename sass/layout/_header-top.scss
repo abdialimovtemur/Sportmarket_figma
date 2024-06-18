@@ -60,6 +60,11 @@
             font-size: 18px;
             padding: 5px;
             border: 3px solid;
+
+            &:hover{
+                color: yellow;
+                background-color: #1F1D14;
+            }
         }
     }
 

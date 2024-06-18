@@ -460,6 +460,11 @@ footer {
   border: 3px solid;
 }
 
+.header-top .header-top__nav__list a:hover {
+  color: yellow;
+  background-color: #1F1D14;
+}
+
 .header-top .header-top__nav__list-show {
   left: 0;
 }
